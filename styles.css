@@ -220,6 +220,10 @@ section p {
     padding: 40px 60px;
 }
 
+.about-us h2 {
+    margin-bottom: 10px;
+}
+
 .about-us h3 {
     font-size: 1.5em;
     margin-top: 40px;
@@ -228,6 +232,10 @@ section p {
 
 .about-us p {
     margin-bottom: 15px;
+}
+
+.what-we-do {
+    background-color: #fff;
 }
 
 /* Flexbox for image placeholders */
