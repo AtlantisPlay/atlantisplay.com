@@ -75,6 +75,11 @@ header {
     max-width: 500px;
 }
 
+.hero-text .highlight {
+    background-color: #ccc;
+    color: #fff;
+}
+
 .hero-text h1 {
     font-size: 46px;
     margin-bottom: 20px;
