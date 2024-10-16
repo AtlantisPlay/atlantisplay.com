@@ -238,6 +238,17 @@ section p {
     background-color: #fff;
 }
 
+.what-we-do p:first-child {
+    font-size: 1.6em;
+}
+
+.we-create-games {
+    border-radius: 7px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Flexbox for image placeholders */
 .art-animations-images {
     display: flex;
