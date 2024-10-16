@@ -152,7 +152,7 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .logo-item img {
@@ -171,10 +171,6 @@ section p {
     .trusted-logos {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .logo-item img {
-        width: 120px;
     }
 }
 
