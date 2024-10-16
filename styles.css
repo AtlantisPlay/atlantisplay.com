@@ -43,6 +43,12 @@ header {
     color: #000;
 }
 
+.logo img {
+    height: 64px;
+    width: auto;
+    filter: grayscale(100%);
+}
+
 .header-row {
     display: flex;
     justify-content: space-between;
@@ -131,15 +137,15 @@ section p {
 /* Trusted by Section */
 .trusted-by {
     background-color: #e7e6e6;
-    padding: 0;
+    padding: 12px;
     text-align: center;
     padding-top: 12px;
 }
 
 .trusted-by h2 {
-    font-size: 16px;
-    margin-bottom: 0px;
-    font-weight: 200;
+    font-size: 1em;
+    margin-bottom: 6px;
+    font-weight: 100;
 }
 
 .trusted-logos {
@@ -150,8 +156,8 @@ section p {
 }
 
 .logo-item img {
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 44px;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
 }
