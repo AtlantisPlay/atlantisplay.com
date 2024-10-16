@@ -28,7 +28,6 @@ header {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-   /* padding: 0 60px; */
 }
 
 .header-row:first-child {
@@ -199,6 +198,7 @@ section p {
     margin-right: 10px;
     border-radius: 5px;
     font-size: 14px;
+    margin-bottom: 4px;
 }
 
 /* Dates in Projects */
@@ -281,4 +281,94 @@ footer {
 
 footer address {
     color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .cta-container {
+        text-align: center;
+    }
+
+    .header-image-placeholder {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .game-info {
+        flex-direction: column;
+    }
+
+    .game-description {
+        margin-top: 20px;
+    }
+
+    .client-projects .project {
+        flex-direction: column;
+    }
+
+    .project-info .tags {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .art-animations-images {
+        flex-direction: column;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .platform-icons {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .cta {
+        font-size: 1.2em;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
 }
