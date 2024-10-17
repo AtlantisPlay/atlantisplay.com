@@ -285,6 +285,15 @@ section p {
     margin-bottom: 15px;
 }
 
+.about-us-content img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    float: left;
+    filter: grayscale(100%);
+}
+
 .what-we-do {
     background-color: #fff;
 }
