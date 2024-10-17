@@ -407,6 +407,11 @@ section p {
     text-align: center;
 }
 
+.cta-section p {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
 .cta {
     font-size: 1.4em;
     font-weight: bolder;
