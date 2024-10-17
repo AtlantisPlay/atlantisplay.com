@@ -39,7 +39,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #000;
 }
 
@@ -86,13 +86,13 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 46px;
+    font-size: 2.875em;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 1.125em;
     margin-bottom: 20px;
     line-height: 1.9;
 }
@@ -125,12 +125,12 @@ section {
 }
 
 section h2 {
-    font-size: 30px;
+    font-size: 1.875em;
     margin-bottom: 30px;
 }
 
 section p {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 2;
 }
 
@@ -201,7 +201,7 @@ section p {
 }
 
 .platform-icons {
-    font-size: 12px;
+    font-size: 0.75em;
     text-align: center;
     color: #555;
 }
@@ -231,8 +231,8 @@ section p {
     position: relative;
 }
 
-.project-info h3 {
-    font-size: 20px;
+.project-info h4 {
+    font-size: 1.125em;
     margin-bottom: 10px;
 }
 
@@ -248,7 +248,7 @@ section p {
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 0.875em;
     margin-bottom: 4px;
 }
 
@@ -257,7 +257,7 @@ section p {
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #555;
 }
 
@@ -308,7 +308,7 @@ section p {
 }
 
 .image-placeholder {
-    width: 30%; /* Ensures 3 placeholders fit in a row */
+    width: 30%;
     height: 250px;
     background-color: #ccc;
     display: flex;
@@ -361,11 +361,11 @@ footer address {
     }
 
     .hero-text h1 {
-        font-size: 32px;
+        font-size: 2em;
     }
 
     .hero-text p {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     .cta-container {
@@ -411,11 +411,11 @@ footer address {
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 28px;
+        font-size: 1.75em;
     }
 
     .hero-text p {
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
     .cta {
@@ -427,7 +427,7 @@ footer address {
     }
 
     .about-us p {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     footer {
