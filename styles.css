@@ -90,18 +90,19 @@ header {
 
 .hero-text h1 {
     font-size: 2.875em;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.9;
 }
 
 .hero-text p {
     font-size: 1.125em;
     margin-bottom: 20px;
-    line-height: 1.9;
+    line-height: 2.5;
 }
 
 .cta-container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .cta-button {
