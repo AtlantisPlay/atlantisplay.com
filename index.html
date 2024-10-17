@@ -30,7 +30,7 @@
                         <p>We partner with our Clients to make their game ideas a reality: from scratch to production.</p>
                         <div class="cta-container">
                             <script language="javascript"
-                                type="text/javascript">var a = "natasha"; document.write("<a class='cta-button' title='Email' href='mailto:" + a + "@atlantisplay.com'>Request a quote</a>");</script>
+                                type="text/javascript">var a = "natasha"; document.write("<a class='cta-button' title='Email' href='mailto:" + a + "@atlantisplay.com'>Get in touch</a>");</script>
                         </div>
                     </div>
                 </div>
@@ -168,8 +168,8 @@
         <h2>What we do</h2>
         <div class="we-create-games">
             <p>We create games for our clients.</p>
-            <p><strong>We are ready to work on your game, so <script language="javascript"
-                type="text/javascript">var a = "natasha"; document.write("<a title='Email' href='mailto:" + a + "@atlantisplay.com'>contact us</a>");</script>!</strong></p>
+            <p><strong>We are ready to work on your game, so let's <script language="javascript"
+                type="text/javascript">var a = "natasha"; document.write("<a title='Email' href='mailto:" + a + "@atlantisplay.com'>get in touch</a>");</script>!</strong></p>
         </div>
 
         <h3>We do Game Art, Animations and Sounds</h3>
@@ -186,10 +186,48 @@
         <p>No matter how difficult is your game, we are ready to work on it.</p>
     </section>
 
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>How do I start working with you?</span>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Let's <script language="javascript"
+                    type="text/javascript">var a = "natasha"; document.write("<a title='Email' href='mailto:" + a + "@atlantisplay.com'>get in touch</a>");</script>, drop us an email with a short description of your project and we'll get back to you to arrange a video call.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>I already have some parts of my game project done, will you work with me?</span>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Absolutely! For example, you can have the art done on your side and we can do development and vise versa. Or you can have some existing code or art and we'll take it from there.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Can I request a quote for my game project?</span>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, you can request a quote by reaching out to us via <script language="javascript"
+                    type="text/javascript">var a = "natasha"; document.write("<a title='Email' href='mailto:" + a + "@atlantisplay.com'>the email</a>");</script>. We're happy to discuss your project requirements and provide a detailed estimate for your game development needs.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="cta">We've created many games and can create yours!</div>
         <script language="javascript"
-            type="text/javascript">var a = "natasha"; document.write("<a class='cta-button' title='Email' href='mailto:" + a + "@atlantisplay.com'>Request a quote</a>");</script>
+            type="text/javascript">var a = "natasha"; document.write("<a class='cta-button' title='Email' href='mailto:" + a + "@atlantisplay.com'>Get in touch</a>");</script>
     </section>
 
     <footer>
@@ -198,5 +236,18 @@
             <address>406771, CYPRUS 8 THEMIDOS, APSIS BLVD.</address>
         </div>
     </footer>
+
+    <script>
+        // FAQ expand/collapse functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('visible');
+            });
+        });
+    </script>
+
 </body>
 </html>
