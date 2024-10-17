@@ -19,7 +19,7 @@ a {
 
 /* Header */
 header {
-    background-color: #f0f0f0;
+    background-color: #1e709f;
     padding: 20px 20px 40px 20px;
 }
 
@@ -46,7 +46,6 @@ header {
 .logo img {
     height: 64px;
     width: auto;
-    filter: grayscale(100%);
 }
 
 .header-row {
@@ -71,17 +70,21 @@ header {
 }
 
 .header-image-placeholder {
-    width: 400px;
-    height: 300px;
-    background-color: #cccccc2f;
+    text-align: center;
+}
+
+.header-image-placeholder img {
+    width: 80%;
+    height: auto;
 }
 
 .hero-text {
     max-width: 500px;
+    color: #fff;
 }
 
 .hero-text .highlight {
-    background-color: #ccc;
+    background-color: #153086;
     color: #fff;
 }
 
@@ -98,23 +101,23 @@ header {
 }
 
 .cta-container {
-    text-align: right;
     margin-top: 20px;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #ed7c24;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: #24c447;
 }
 
 /* Sections */
@@ -175,6 +178,13 @@ section p {
 }
 
 /* Astro Arena Section */
+
+.game {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 .game-info {
     display: flex;
 }
@@ -227,7 +237,7 @@ section p {
 /* Client Projects */
 .client-projects .project {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -238,7 +248,7 @@ section p {
 
 .project-info .tags {
     position: absolute;
-    left: 170px;
+    left: 190px;
     bottom: 27px;
 }
 
@@ -255,8 +265,8 @@ section p {
 /* Dates in Projects */
 .project-date {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
     font-size: 0.875em;
     color: #555;
 }
