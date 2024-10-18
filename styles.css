@@ -307,7 +307,6 @@ section p {
     margin-right: 20px;
     border-radius: 8px;
     float: left;
-    filter: grayscale(100%);
 }
 
 .what-we-do {
@@ -315,10 +314,12 @@ section p {
 }
 
 .what-we-do p:first-child {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .we-create-games {
+    color: #fff;
+    background-color: #1e709f;
     border-radius: 7px;
     text-align: center;
     padding: 20px;
@@ -421,6 +422,9 @@ section p {
 /* CTA Section */
 .cta-section {
     text-align: center;
+    background-color: #1e709f;
+    color: #fff;
+    max-width: none;
 }
 
 .cta-section p {
