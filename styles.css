@@ -83,7 +83,7 @@ header {
     color: #fff;
 }
 
-.hero-text .highlight {
+.highlight {
     background-color: #153086;
     color: #fff;
 }
@@ -324,6 +324,12 @@ section p {
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.we-create-games .image-holder img {
+    height: 175px;
 }
 
 /* Flexbox for image placeholders */
