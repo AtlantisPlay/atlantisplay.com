@@ -70,7 +70,7 @@ header {
 }
 
 .header-image-placeholder {
-    text-align: center;
+    text-align: right;
 }
 
 .header-image-placeholder img {
@@ -209,6 +209,11 @@ section p {
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    background-color: #fff;
 }
 
 .platform-icons {
