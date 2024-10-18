@@ -434,6 +434,15 @@ section p {
     background-color: #1e709f;
     color: #fff;
     max-width: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-image img {
+    height: 357px;
+    position: absolute;
+    margin-top: -82px;
+    margin-left: -120px;
 }
 
 .cta-section p {
