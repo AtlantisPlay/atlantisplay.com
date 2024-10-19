@@ -53,6 +53,26 @@
         </div>
     </section>
 
+    <section class="our-benefits">
+        <div class="benefits-container">
+            <div class="benefit-block">
+                <i class="fas fa-handshake"></i>
+                <h3>We're easy to work with</h3>
+                <p>So much experience we know some of your requirements upfront</p>
+            </div>
+            <div class="benefit-block">
+                <i class="fas fa-tasks"></i>
+                <h3>We do it all</h3>
+                <p>We do everything from concept to production</p>
+            </div>
+            <div class="benefit-block">
+                <i class="fas fa-users"></i>
+                <h3>We merge seamlessly with your team</h3>
+                <p>Ready to work directly with anyone in your team.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="astro-arena">
         <h2>Our experience</h2>
         <h3>Our Game: Astro Arena</h3>
@@ -71,7 +91,7 @@
 
     <section class="client-projects">
         <h3>Games we made for our Clients</h3>
-
+        
         <div class="project game">
             <div class="project-image">
                 <div class="image-container"></div>
@@ -93,7 +113,7 @@
             </div>
             <div class="project-date">2019-2021</div>
         </div>
-
+    
         <div class="project game">
             <div class="project-image">
                 <div class="image-container"></div>
@@ -115,48 +135,53 @@
             </div>
             <div class="project-date">2021-2022</div>
         </div>
-
-        <div class="project game">
-            <div class="project-image">
-                <div class="image-container"></div>
-                <div class="platform-icons">
-                    <i class="fas fa-desktop"></i>Desktop
+    
+        <div id="more-projects" style="display: none;">
+            <div class="project game">
+                <div class="project-image">
+                    <div class="image-container"></div>
+                    <div class="platform-icons">
+                        <i class="fas fa-desktop"></i>Desktop
+                    </div>
                 </div>
-            </div>
-            <div class="project-info">
-                <h4>Simulator for a hugely popular Match-3 game</h4>
-                <p>Development of a Simulator, a highly efficient level designer’s tool for an international company.</p>
-                <div class="tags">
-                    <span>Development</span>
-                    <span>Quality Assurance</span>
-                    <span>Project Management</span>
+                <div class="project-info">
+                    <h4>Simulator for a hugely popular Match-3 game</h4>
+                    <p>Development of a Simulator, a highly efficient level designer’s tool for an international company.</p>
+                    <div class="tags">
+                        <span>Development</span>
+                        <span>Quality Assurance</span>
+                        <span>Project Management</span>
+                    </div>
                 </div>
+                <div class="project-date">2021-2022</div>
             </div>
-            <div class="project-date">2021-2022</div>
+    
+            <div class="project game">
+                <div class="project-image">
+                    <div class="image-container"></div>
+                    <div class="platform-icons">
+                        <i class="fab fa-android"></i>Android
+                        <i class="fab fa-apple"></i>iOS
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Big Merge-2 Game</h4>
+                    <p>Full development from scratch for an Israeli company.</p>
+                    <div class="tags">
+                        <span>Development</span>
+                        <span>Quality Assurance</span>
+                        <span>Animations</span>
+                        <span>Project Management</span>
+                    </div>
+                </div>
+                <div class="project-date">2022 - now</div>
+            </div>
         </div>
-
-        <div class="project game">
-            <div class="project-image">
-                <div class="image-container"></div>
-                <div class="platform-icons">
-                    <i class="fab fa-android"></i>Android
-                    <i class="fab fa-apple"></i>iOS
-                </div>
-            </div>
-            <div class="project-info">
-                <h4>Big Merge-2 Game</h4>
-                <p>Full development from scratch for an Israeli company.</p>
-                <div class="tags">
-                    <span>Development</span>
-                    <span>Quality Assurance</span>
-                    <span>Animations</span>
-                    <span>Project Management</span>
-                </div>
-            </div>
-            <div class="project-date">2022 - now</div>
+        <div class="show-more-container">
+            <button id="show-more-btn" class="secondary-button">Show more</button>
         </div>
     </section>
-
+    
     <section class="about-us">
         <h2>Who we are</h2>
         <div class="about-us-content">
@@ -272,6 +297,20 @@
                 const answer = question.nextElementSibling;
                 answer.classList.toggle('visible');
             });
+        });
+
+        // Show more functionality for Client Projects
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const moreProjects = document.getElementById('more-projects');
+
+        showMoreBtn.addEventListener('click', () => {
+            if (moreProjects.style.display === 'none') {
+                moreProjects.style.display = 'block';
+                showMoreBtn.textContent = 'Show less';
+            } else {
+                moreProjects.style.display = 'none';
+                showMoreBtn.textContent = 'Show more';
+            }
         });
     </script>
 
