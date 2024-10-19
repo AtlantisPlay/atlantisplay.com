@@ -180,7 +180,9 @@
 
         </div>
         <div class="show-more-container">
-            <button id="show-more-btn" class="secondary-button">Show more</button>
+            <button id="show-more-btn" class="secondary-button">
+                <span>Show more</span> <i class="fas fa-angle-down"></i>
+            </button>
         </div>
     </section>
     
@@ -304,14 +306,20 @@
         // Show more functionality for Client Projects
         const showMoreBtn = document.getElementById('show-more-btn');
         const moreProjects = document.getElementById('more-projects');
+        const showMoreText = showMoreBtn.querySelector('span');
+        const showMoreIcon = showMoreBtn.querySelector('i');
 
         showMoreBtn.addEventListener('click', () => {
             if (moreProjects.style.display === 'none') {
                 moreProjects.style.display = 'block';
-                showMoreBtn.textContent = 'Show less';
+                showMoreText.textContent = 'Show less';
+                showMoreIcon.classList.remove('fa-angle-down');
+                showMoreIcon.classList.add('fa-angle-up');
             } else {
                 moreProjects.style.display = 'none';
-                showMoreBtn.textContent = 'Show more';
+                showMoreText.textContent = 'Show more';
+                showMoreIcon.classList.remove('fa-angle-up');
+                showMoreIcon.classList.add('fa-angle-down');
             }
         });
     </script>
