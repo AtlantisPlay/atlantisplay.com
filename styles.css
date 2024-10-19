@@ -321,6 +321,7 @@ section p {
     top: 20px;
     font-size: 0.875em;
     color: #555;
+    display: none;
 }
 
 .project-image {
