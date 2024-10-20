@@ -227,7 +227,7 @@ section p {
 /* Astro Arena Section */
 
 .game {
-    background-color: #f9f9f9;
+    background-color: #ccdedf;
     border-radius: 8px;
     padding: 20px;
 }
@@ -249,8 +249,8 @@ section p {
 
 /* Image and platform icons */
 .image-container {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: #ccc;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -260,6 +260,7 @@ section p {
 .image-container img {
     width: 100%;
     background-color: #fff;
+    border-radius: 8px;
 }
 
 .platform-icons {
@@ -271,6 +272,10 @@ section p {
 .platform-icons i {
     margin-right: 4px;
     margin-left: 8px;
+}
+
+.astro-arena h2 {
+    margin-bottom: 10px;
 }
 
 .astro-arena, .client-projects {
@@ -300,13 +305,14 @@ section p {
 
 .project-info .tags {
     position: absolute;
-    left: 190px;
+    left: 170px;
     bottom: 27px;
 }
 
 .tags span {
     display: inline-block;
-    background-color: #eee;
+    background-color: #1e9a9f;
+    color: #fff;
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 5px;
@@ -345,13 +351,14 @@ section p {
 }
 
 .secondary-button:hover {
-    background-color: #24c447;
+    background-color: #a9a9a9;
 }
 
 /* About Us Section */
 .about-us {
-    background-color: #e8e8e8;
+    background-color: #1e9a9f;
     padding: 40px 60px;
+    color: #fff;
 }
 
 .about-us h2 {
@@ -378,6 +385,8 @@ section p {
 
 .what-we-do {
     background-color: #fff;
+    color: #000;
+    background: url('images/Background1.png') no-repeat;
 }
 
 .what-we-do p:first-child {
@@ -430,7 +439,7 @@ section p {
 
 /* FAQ Section */
 .faq-section {
-    background-color:#e8e8e8;
+    background-color:#fff;
 }
 
 .faq-section h2 {
