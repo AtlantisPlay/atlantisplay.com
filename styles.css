@@ -195,7 +195,7 @@ section p {
 .benefit-block {
     background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     flex: 1;
 }
