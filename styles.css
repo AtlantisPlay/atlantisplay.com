@@ -295,8 +295,7 @@ section p {
 
 .tags span {
     display: inline-block;
-    background-color: #1e9a9f;
-    color: #fff;
+    border: 1px solid #1e9a9f;
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 5px;
