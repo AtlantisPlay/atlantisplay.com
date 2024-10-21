@@ -295,7 +295,7 @@ section p {
 
 .tags span {
     display: inline-block;
-    border: 1px solid #1e9a9f;
+    border: 1px solid #416f71;
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 5px;
@@ -339,7 +339,7 @@ section p {
 
 /* About Us Section */
 .about-us {
-    background-color: #1e9a9f;
+    background-color: #416f71;
     padding: 40px 60px;
     color: #fff;
 }
