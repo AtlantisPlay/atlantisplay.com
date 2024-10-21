@@ -184,6 +184,40 @@ section p {
     }
 }
 
+/* Our services Section */
+
+.offer {
+    background-color: #fff;
+    color: #000;
+}
+
+.offer-point {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d4d0d0;
+    font-size: 1.1em;
+}
+
+.offer-need {
+    flex: 1;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.offer-description {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.offer-description-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 /* Our Benefits Section */
 .our-benefits {
     padding: 0;
