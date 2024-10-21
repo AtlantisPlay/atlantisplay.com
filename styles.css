@@ -126,6 +126,8 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 60px;
+    margin-bottom: 28px;
+    border-radius: 6px;
 }
 
 section h2 {
@@ -182,7 +184,7 @@ section p {
 
 /* Our Benefits Section */
 .our-benefits {
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -497,6 +499,8 @@ section p {
     max-width: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
 .cta-image img {
