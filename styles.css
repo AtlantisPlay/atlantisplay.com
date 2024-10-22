@@ -120,10 +120,12 @@ header .header-row {
     transition: background-color 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
+    background: linear-gradient(180deg, #ff9c2f, #ff6600);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
-    background-color: #e26a0e;
+    background: linear-gradient(180deg, #ff6600, #e26a0e);
 }
 
 /* Sections */
