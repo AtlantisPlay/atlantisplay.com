@@ -548,8 +548,8 @@ section p {
 }
 
 .cta-section p {
-    font-style: italic;
     font-size: 1.3em;
+    font-family: 'Kalam', sans-serif;
 }
 
 .cta {
