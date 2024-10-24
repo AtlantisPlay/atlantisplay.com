@@ -128,6 +128,21 @@ header .header-row {
     background: linear-gradient(180deg, #ff6600, #e26a0e);
 }
 
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #95d1f4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.icon-circle i {
+    font-size: 24px;
+    color: #fff;
+}
+
 /* Sections */
 section {
     max-width: 1000px;
@@ -202,22 +217,25 @@ section p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #d4d0d0;
+    padding-top: 20px;
     font-size: 1.1em;
+    border-top: 1px solid #d4d0d0;
 }
 
 .offer-need {
     flex: 1;
     font-style: italic;
     margin-right: 20px;
+    text-align: center;
+}
+
+.offer-need p {
+    font-size: 1em;
 }
 
 .offer-description {
     flex: 2;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #416f71;
     border-radius: 8px;
 }
 
