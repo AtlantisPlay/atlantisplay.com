@@ -221,6 +221,11 @@ section p {
     border-top: 1px solid #d4d0d0;
 }
 
+.offer-point:last-child {
+    border-bottom: 1px solid #d4d0d0;
+    padding-bottom: 20px;
+}
+
 .offer-need {
     flex: 1;
     font-style: italic;
@@ -244,9 +249,10 @@ section p {
 
 /* Our Benefits Section */
 .our-benefits {
-    padding: 0;
     text-align: center;
-    background-color: aliceblue;
+    background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .benefits-container {
@@ -259,6 +265,8 @@ section p {
     padding: 20px;
     text-align: center;
     flex: 1;
+    background-color: aliceblue;
+    border-radius: 8px;
 }
 
 .benefit-block i {
