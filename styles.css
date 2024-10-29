@@ -44,9 +44,6 @@ header .header-row {
 }
 
 .header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -61,22 +58,17 @@ header .header-row {
     align-items: center;
 }
 
-.hero .header-column:last-child {
-    justify-content: flex-end;
-}
-
 .header-image-placeholder {
     text-align: right;
 }
 
 .header-image-placeholder img {
-    width: 93%;
-    height: auto;
+    height: 540px;
 }
 
 .hero {
-    background-color: #1e709f;
-    padding: 20px 20px 0 20px;
+    background: linear-gradient(180deg, #3f70bd, #0a55aa);
+    padding: 1px;
     max-width: none;
     border-radius: 0;
     margin-bottom: 0;
@@ -88,8 +80,9 @@ header .header-row {
 }
 
 .highlight {
-    background-color: #153086;
     color: #fff;
+    background: url("images/Brush_stroke.png") no-repeat;
+    color: #2e68b7;
 }
 
 .hero-text h1 {
@@ -446,7 +439,7 @@ section p {
 
 .we-create-games {
     color: #fff;
-    background-color: #1e709f;
+    background: linear-gradient(180deg, #3f70bd, #0a55aa);
     border-radius: 7px;
     text-align: center;
     padding: 20px;
@@ -563,7 +556,7 @@ section p {
 /* CTA Section */
 .cta-section {
     text-align: center;
-    background-color: #1e709f;
+    background: linear-gradient(180deg, #3f70bd, #0a55aa);
     color: #fff;
     max-width: none;
     display: flex;
