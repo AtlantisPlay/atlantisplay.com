@@ -125,12 +125,12 @@ header .header-row {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-  /* background-color: #1e709f; */
+    /* background-color: #1e709f; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  
+}
+
 .icon-circle i {
     font-size: 30px;
     color: #fff;
@@ -280,7 +280,7 @@ section p {
 .benefit-block p {
     font-size: 1.125em;
     line-height: 1.8;
-    color:#555
+    color: #555;
 }
 
 @media (max-width: 768px) {
@@ -329,7 +329,7 @@ section p {
     margin-bottom: 10px;
 }
 
- .client-projects {
+.client-projects {
     background-color: #fff;
 }
 
@@ -483,7 +483,7 @@ section p {
 
 /* FAQ Section */
 .faq-section {
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .faq-section h2 {
