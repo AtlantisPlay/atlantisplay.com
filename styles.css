@@ -21,12 +21,14 @@ a {
 header {
     background-color: #e7e6e6;
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 }
 
 header .header-container {
@@ -68,16 +70,15 @@ header .header-container {
 }
 
 .hero-image {
-    text-align: right;
+    text-align: center;
 }
 
 .hero-image img {
-    height: 540px;
+    width: 74%;
 }
 
 .hero {
     background: linear-gradient(180deg, #3f70bd, #0a55aa);
-    padding: 20px 0 0 0;
     max-width: none;
 }
 
@@ -333,10 +334,8 @@ section p {
     margin-bottom: 10px;
 }
 
-.project-info .tags {
-    position: absolute;
-    left: 160px;
-    bottom: 27px;
+.tags {
+    margin-top: 10px;
 }
 
 .tags span {
@@ -425,21 +424,18 @@ section p {
 .sample-image {
     width: 30%;
     height: 250px;
-    background-color: #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 16px;
-    color: #555;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sample-image img {
-    width: 100%;
     height: 100%;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* "Who we are" Section */
@@ -554,4 +550,227 @@ footer {
 
 footer address {
     color: #ccc;
+}
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 16px;
+    }
+    
+    /* Adjust header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .menu a {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    /* Hero Section */
+    .hero-column {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2em;
+    }
+    
+    .hero-text p {
+        font-size: 1em;
+    }
+    
+    .hero-image img {
+        height: auto;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .highlight {
+        background: none;
+        color: #fff;
+        width: auto;
+        font-style: italic;
+    }
+    
+    /* Our Services Section */
+    .service-point {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-need {
+        margin-right: 0;
+        margin-top: 10px;
+        text-align: left;
+    }
+    
+    .service-description {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    
+    /* Our Benefits Section */
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .benefit-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Our Projects Section */
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .project-info {
+        text-align: center;
+    }
+
+    /* What we do Section */
+    .we-create-games .image-holder img {
+        display: none;
+    }
+    
+    /* Art and Animations Images */
+    .art-animations-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sample-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Who We Are Section */
+    .who-we-are-content img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    /* FAQ Section */
+    .faq-answer {
+        padding: 20px 0 0 0;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    
+    .cta-image img {
+        display: none;
+    }
+    
+    .cta-content {
+        text-align: center;
+    }
+}
+
+/* Small devices (mobile phones, 576px and below) */
+@media only screen and (max-width: 576px) {
+    /* Adjust paddings in sections */
+    section {
+        padding: 20px;
+    }
+    
+    /* Header adjustments */
+    .menu a {
+        margin-right: 10px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.75em;
+    }
+    
+    .hero-text p {
+        font-size: 0.9em;
+    }
+    
+    /* Service Points */    
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-description-title {
+        font-size: 1em;
+    }
+    
+    .service-description-text {
+        font-size: 0.9em;
+    }
+    
+    /* Benefit Blocks */
+    .benefit-block h3 {
+        font-size: 1.1em;
+    }
+    
+    .benefit-block p {
+        font-size: 1em;
+    }
+    
+    /* Projects */
+    .project-info h4 {
+        font-size: 1em;
+    }
+    
+    .project-info p {
+        font-size: 0.9em;
+    }
+    
+    /* Text Sections */
+    .text-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .text-section h3 {
+        font-size: 1.25em;
+    }
+    
+    .text-section p {
+        font-size: 1em;
+    }
+    
+    /* FAQ Section */
+    .faq-question {
+        font-size: 1em;
+    }
+    
+    .faq-answer {
+        font-size: 0.9em;
+    }
+    
+    /* Footer */
+    footer p,
+    footer address {
+        font-size: 0.9em;
+    }
 }
