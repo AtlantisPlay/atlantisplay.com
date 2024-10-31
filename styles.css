@@ -369,7 +369,7 @@ section p {
     background-color: #a9a9a9;
 }
 
-/* Text section */
+/* Generic Text section */
 .text-section h2 {
     margin-bottom: 10px;
 }
@@ -388,7 +388,7 @@ section p {
 .what-we-do {
     background-color: #fff;
     color: #000;
-    background: url('images/Background1.png') no-repeat;
+    background: url('images/Layer-1.png') no-repeat;
 }
 
 .what-we-do p:first-child {
@@ -440,8 +440,7 @@ section p {
 
 /* "Who we are" Section */
 .who-we-are {
-    background-color: #416f71;
-    color: #fff;
+    background-color: #e5eaeb;
     padding-bottom: 60px;
 }
 
