@@ -20,6 +20,7 @@ a {
 /* Header */
 header {
     background-color: #e7e6e6;
+    padding-top: 20px;
 }
 
 .header-container {
@@ -27,10 +28,6 @@ header {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-}
-
-header .header-row {
-    text-align: left;
 }
 
 .logo {
@@ -43,32 +40,28 @@ header .header-row {
     width: auto;
 }
 
-.header-row {
-    margin-top: 20px;
-}
-
-.header-column {
+.hero-column {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.hero .header-column:first-child {
+.hero-column:first-child {
     justify-content: flex-start;
     align-items: center;
 }
 
-.header-image-placeholder {
+.hero-image {
     text-align: right;
 }
 
-.header-image-placeholder img {
+.hero-image img {
     height: 540px;
 }
 
 .hero {
     background: linear-gradient(180deg, #3f70bd, #0a55aa);
-    padding: 1px;
+    padding: 20px 0 0 0;
     max-width: none;
     border-radius: 0;
     margin-bottom: 0;
@@ -125,7 +118,7 @@ header .header-row {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    /* background-color: #1e709f; */
+    background-color: #1e709f14;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -154,8 +147,8 @@ section p {
     line-height: 2;
 }
 
-/* Trusted by Section */
-.trusted-by {
+/* "We teamed up with" Section */
+.partners-section {
     background-color: #e7e6e6;
     padding: 12px;
     text-align: center;
@@ -164,47 +157,38 @@ section p {
     border-radius: 0;
 }
 
-.trusted-by h2 {
+.partners-section h3 {
     font-size: 1em;
     margin-bottom: 6px;
     font-weight: 100;
 }
 
-.trusted-logos {
+.partner-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
 }
 
-.logo-item img {
+.partner-logo img {
     width: auto;
     height: 44px;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
 }
 
-.logo-item img:hover {
+.partner-logo img:hover {
     filter: grayscale(0%);
 }
 
-/* Responsive Trusted by Section */
-@media (max-width: 768px) {
-    .trusted-logos {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-/* Our services Section */
-
-.offer {
+/* "Our services" Section */
+.our-services {
     background-color: #fff;
     color: #000;
     padding-bottom: 10px;
 }
 
-.offer-point {
+.service-point {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,28 +198,32 @@ section p {
     border-top: 1px solid #d4d0d0;
 }
 
-.offer-point:last-child {
+.service-point img {
+    width: 40px;
+}
+
+.service-point:last-child {
     border-bottom: 1px solid #d4d0d0;
     padding-bottom: 20px;
 }
 
-.offer-need {
+.service-need {
     flex: 1;
     font-style: italic;
     margin-right: 20px;
     text-align: center;
 }
 
-.offer-need p {
+.service-need p {
     font-size: 1em;
 }
 
-.offer-description {
+.service-description {
     flex: 2;
     padding: 10px;
 }
 
-.offer-description-title {
+.service-description-title {
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -262,19 +250,14 @@ section p {
     border: 1px solid #ccc;
 }
 
-.benefit-block i {
-    font-size: 1.8em;
-    color: #1e709f;
-    margin-bottom: 15px;
-}
-
 .benefit-block img {
-    height: 40px;
+    height: 30px;
 }
 
 .benefit-block h3 {
     font-size: 1.2em;
     margin-bottom: 15px;
+    margin-top: 6px;
 }
 
 .benefit-block p {
@@ -283,22 +266,29 @@ section p {
     color: #555;
 }
 
-@media (max-width: 768px) {
-    .benefits-container {
-        flex-direction: column;
-        gap: 20px;
-    }
+/* "Our Experience" Section */
+.our-projects {
+    background-color: #fff;
 }
 
-/* Our Experience Section */
+.our-projects h2 {
+    margin-bottom: 10px;
+}
 
-.game {
+.our-projects h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.project {
     background-color: #e5eaeb;
     border-radius: 8px;
     padding: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-/* Image and platform icons */
 .image-container {
     width: 120px;
     height: 120px;
@@ -325,25 +315,6 @@ section p {
     margin-left: 8px;
 }
 
-.client-projects h2 {
-    margin-bottom: 10px;
-}
-
-.client-projects {
-    background-color: #fff;
-}
-
-.client-projects h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.client-projects .project {
-    display: flex;
-    margin-bottom: 20px;
-    position: relative;
-}
-
 .project-info h4 {
     font-size: 1.125em;
     margin-bottom: 10px;
@@ -363,16 +334,6 @@ section p {
     border-radius: 5px;
     font-size: 0.875em;
     margin-bottom: 4px;
-}
-
-/* Dates in Projects */
-.project-date {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 0.875em;
-    color: #555;
-    display: none;
 }
 
 .project-image {
@@ -399,34 +360,22 @@ section p {
     background-color: #a9a9a9;
 }
 
-/* About Us Section */
-.about-us {
-    background-color: #416f71;
-    color: #fff;
-}
-
-.about-us h2 {
+/* Text section */
+.text-section h2 {
     margin-bottom: 10px;
 }
 
-.about-us h3 {
+.text-section h3 {
     font-size: 1.5em;
     margin-top: 40px;
     margin-bottom: 12px;
 }
 
-.about-us p {
+.text-section p {
     margin-bottom: 15px;
 }
 
-.about-us-content img {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 8px;
-    float: left;
-}
-
+/* "What we do" Section */
 .what-we-do {
     background-color: #fff;
     color: #000;
@@ -454,7 +403,6 @@ section p {
     margin-top: -57px;
 }
 
-/* Flexbox for image placeholders */
 .art-animations-images {
     display: flex;
     justify-content: space-between;
@@ -479,6 +427,20 @@ section p {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+}
+
+/* "Who we are" Section */
+.who-we-are {
+    background-color: #416f71;
+    color: #fff;
+}
+
+.who-we-are-content img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    float: left;
 }
 
 /* FAQ Section */
@@ -542,17 +504,6 @@ section p {
     display: block;
 }
 
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-    .faq-section {
-        padding: 20px;
-    }
-
-    .faq-question {
-        font-size: 1.1em;
-    }
-}
-
 /* CTA Section */
 .cta-section {
     text-align: center;
@@ -594,94 +545,4 @@ footer {
 
 footer address {
     color: #ccc;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    .header-container {
-        padding: 0 20px;
-    }
-
-    .header-row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 2em;
-    }
-
-    .hero-text p {
-        font-size: 1em;
-    }
-
-    .cta-container {
-        text-align: center;
-    }
-
-    .header-image-placeholder {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .game-info {
-        flex-direction: column;
-    }
-
-    .game-description {
-        margin-top: 20px;
-    }
-
-    .client-projects .project {
-        flex-direction: column;
-    }
-
-    .project-info .tags {
-        position: static;
-        margin-top: 10px;
-    }
-
-    .art-animations-images {
-        flex-direction: column;
-    }
-
-    .image-placeholder {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .platform-icons {
-        text-align: left;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.75em;
-    }
-
-    .hero-text p {
-        font-size: 0.875em;
-    }
-
-    .cta {
-        font-size: 1.2em;
-    }
-
-    .section {
-        padding: 20px;
-    }
-
-    .about-us p {
-        font-size: 1em;
-    }
-
-    footer {
-        padding: 20px;
-    }
 }
