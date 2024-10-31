@@ -29,6 +29,28 @@ header {
     display: flex;
 }
 
+header .header-container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu {
+    margin-left: 20px;
+    align-self: center;
+    font-size: 1em;
+    letter-spacing: -0.8px;
+}
+
+.menu a {
+    color: #9c9c9c;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.menu a:hover {
+    color: #0a55aa;
+}
+
 .logo img {
     height: 64px;
     width: auto;
