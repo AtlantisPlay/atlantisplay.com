@@ -27,12 +27,6 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-}
-
-.logo {
-    font-size: 1.5em;
-    color: #000;
 }
 
 .logo img {
@@ -63,8 +57,6 @@ header {
     background: linear-gradient(180deg, #3f70bd, #0a55aa);
     padding: 20px 0 0 0;
     max-width: none;
-    border-radius: 0;
-    margin-bottom: 0;
 }
 
 .hero-text {
@@ -72,14 +64,12 @@ header {
 }
 
 .highlight {
-    color: #fff;
     background: url("images/Brush_stroke.png") no-repeat;
     color: #2e68b7;
     font-style: normal;
     display: inline-block;
     width: 197px;
-    background-position-y: 10px;
-    background-position-x: -2px;
+    background-position: -2px 10px;
 }
 
 .hero-text h1 {
@@ -103,15 +93,13 @@ header {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ed7c24;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
     background: linear-gradient(180deg, #ff9c2f, #ff6600);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -156,9 +144,7 @@ section p {
     background-color: #e7e6e6;
     padding: 12px;
     text-align: center;
-    padding-top: 12px;
     max-width: none;
-    border-radius: 0;
 }
 
 .partners-section h3 {
@@ -170,12 +156,10 @@ section p {
 .partner-logos {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 60px;
 }
 
 .partner-logo img {
-    width: auto;
     height: 44px;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
@@ -188,7 +172,6 @@ section p {
 /* "Our services" Section */
 .our-services {
     background-color: #fff;
-    color: #000;
     padding-bottom: 10px;
 }
 
@@ -309,7 +292,6 @@ section p {
 
 .image-container img {
     width: 100%;
-    background-color: #fff;
     border-radius: 8px;
 }
 
@@ -474,7 +456,6 @@ section p {
     font-size: 1.25em;
     font-weight: bold;
     cursor: pointer;
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -521,8 +502,6 @@ section p {
     max-width: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
-    border-radius: 0;
 }
 
 .cta-image img {
@@ -540,8 +519,7 @@ section p {
 .cta {
     font-size: 1.4em;
     font-weight: bolder;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin: 22px 0;
 }
 
 /* Footer */
