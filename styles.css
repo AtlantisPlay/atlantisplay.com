@@ -713,6 +713,10 @@ footer address {
     .hero-text p {
         font-size: 0.9em;
     }
+
+    .partner-logos {
+        gap: 20px;
+    }
     
     /* Service Points */    
     .icon-circle {
