@@ -68,7 +68,6 @@ header {
 }
 
 .hero-text {
-    max-width: 500px;
     color: #fff;
 }
 
@@ -76,6 +75,11 @@ header {
     color: #fff;
     background: url("images/Brush_stroke.png") no-repeat;
     color: #2e68b7;
+    font-style: normal;
+    display: inline-block;
+    width: 197px;
+    background-position-y: 10px;
+    background-position-x: -2px;
 }
 
 .hero-text h1 {
@@ -248,6 +252,11 @@ section p {
     flex: 1;
     border-radius: 8px;
     border: 1px solid #ccc;
+}
+
+.benefit-block .icon-circle {
+    width: 50px;
+    height: 50px;
 }
 
 .benefit-block img {
@@ -433,6 +442,7 @@ section p {
 .who-we-are {
     background-color: #416f71;
     color: #fff;
+    padding-bottom: 60px;
 }
 
 .who-we-are-content img {
