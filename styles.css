@@ -561,6 +561,10 @@ footer address {
     body {
         font-size: 16px;
     }
+
+    header {
+        padding: 10px;
+    }
     
     /* Adjust header */
     .header-container {
@@ -580,6 +584,11 @@ footer address {
     }
     
     /* Hero Section */
+
+    .hero {
+        padding: 20px;
+    }
+
     .hero-column {
         flex-direction: column;
         align-items: center;
