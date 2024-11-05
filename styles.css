@@ -442,7 +442,6 @@ section p {
 /* "Who we are" Section */
 .who-we-are {
     background-color: #e5eaeb;
-    padding-bottom: 60px;
 }
 
 .who-we-are-content img {
@@ -552,6 +551,49 @@ footer {
 footer address {
     color: #ccc;
 }
+
+.career-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.career-title {
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+.career-title i.fas.fa-minus {
+    display: none;
+}
+
+.career-title.active i.fas.fa-plus {
+    display: none;
+}
+
+.career-title.active i.fas.fa-minus {
+    display: inline-block;
+}
+
+.career-description {
+    display: none;
+    font-size: 1.125em;
+    line-height: 1.8;
+    padding-top: 20px;
+}
+
+.career-description.visible {
+    display: block;
+}
+
 
 /* Responsive Styles */
 
