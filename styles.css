@@ -19,7 +19,7 @@ a {
 
 /* Header */
 header {
-    background-color: #e7e6e6;
+    background-color: #fff;
     padding: 10px 0 10px 40px;
 }
 
@@ -364,13 +364,17 @@ section p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     border: none;
 }
 
 .secondary-button:hover {
-    background-color: #a9a9a9;
+    background-color: #eae8e8;
+}
+
+.secondary-button:active {
+    background-color: #f3f3f3;
 }
 
 /* Generic Text section */
@@ -467,6 +471,7 @@ section p {
 }
 
 .faq-question {
+    color: #1677ec;
     background: none;
     border: none;
     text-align: left;
@@ -652,10 +657,10 @@ footer address {
     }
 
     .highlight {
-        background: none;
-        color: #fff;
+        background-size: contain;
         width: auto;
-        font-style: italic;
+        margin: 0;
+        background-position: 2px 10px;
     }
     
     /* Our Services Section */
@@ -755,7 +760,8 @@ footer address {
     
     /* Header adjustments */
     .menu a {
-        margin-right: 10px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
     
     .hero-text h1 {
@@ -764,6 +770,11 @@ footer address {
     
     .hero-text p {
         font-size: 0.9em;
+        line-height: 1.9;
+    }
+
+    h3 {
+        text-align: center;
     }
 
     .partner-logos {
