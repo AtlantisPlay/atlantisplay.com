@@ -122,7 +122,7 @@ header .header-container {
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 3px #454343;
     transition: background-color 0.3s;
 }
 
