@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script>
-        const email = "natasha" + '@' + "atlantisplay.com"; //anti-spam
-        function renderEmailButton() {
-            document.write(`<a class="cta-button" title="Email" href="mailto:${email}">Get in touch</a>`);
+        const name = "natasha";
+        const email = name + '@' + "atlantisplay.com"; //anti-spam
+        function renderEmailButton(dataLabel) {
+            document.write(`<a class="clickableCTA cta-button" data-label="${dataLabel}" title="Email" href="mailto:${email}">Get in touch</a>`);
         }
-        function renderEmailLink() {
-            document.write(`<a title="Email" href="mailto:${email}">get in touch</a>`);
+        function renderEmailLink(dataLabel) {
+            document.write(`<a class="clickableCTA" title="Email" data-label="${dataLabel}" href="mailto:${email}">get in touch</a>`);
         }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -54,7 +55,7 @@
                         <strong>game development services</strong>.
                     </p>
                     <div class="cta-container">
-                        <script>renderEmailButton();</script>
+                        <script>renderEmailButton('heroSectionCTA');</script>
                     </div>
                 </div>
             </div>
@@ -260,7 +261,7 @@
             <div class="we-create-games-content">
                 <p>We create games for our clients.</p>
                 <p><strong>We are ready to work on <em>your</em> game, so let's</strong></p>
-                <script>renderEmailButton();</script>
+                <script>renderEmailButton('whatWeDoSectionCTA');</script>
             </div>
             <div class="image-holder"><img src="images/characters/bunny1.png" alt="Character"></div>
         </div>
@@ -307,7 +308,7 @@
             </button>
             <div class="faq-answer">
                 <p>Let's
-                    <script>renderEmailLink();</script>! Drop us an email with a short description of your project and
+                    <script>renderEmailLink('faqLinkCTA');</script>! Drop us an email with a short description of your project and
                     we'll get back to you to arrange a video call.
                 </p>
             </div>
@@ -354,7 +355,7 @@
             <p>Organic Team is our philosophy!</p>
             <p>Professionalism and Creativity are our strengths!</p>
             <div class="cta">We've created many games and can create yours!</div>
-            <script>renderEmailButton();</script>
+            <script>renderEmailButton('finalSectionCTA');</script>
         </div>
     </section>
 
@@ -393,6 +394,15 @@
                 showMoreIcon.classList.remove('fa-angle-up');
                 showMoreIcon.classList.add('fa-angle-down');
             }
+        });
+        document.querySelectorAll('.clickableCTA').forEach(function(element) {
+            element.addEventListener('click', function() {
+                const label = element.getAttribute('data-label') || 'Unknown';
+                gtag('event', 'contact_click', {
+                    'event_category': 'click',
+                    'event_label': label
+                });
+            });
         });
     </script>
 
