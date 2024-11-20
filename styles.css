@@ -134,7 +134,6 @@ header .header-container {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #1e709f14;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -199,23 +198,26 @@ section p {
     padding-bottom: 10px;
 }
 
-.service-point {
+.services-container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+}
+
+.service-point {
     align-items: center;
+    text-align: center;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px;
     font-size: 1.1em;
-    border-top: 1px solid #d4d0d0;
+    background: linear-gradient(180deg, #e5eaeb87, #e5eaeb);
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .service-point img {
     width: 40px;
-}
-
-.service-point:last-child {
-    border-bottom: 1px solid #d4d0d0;
-    padding-bottom: 20px;
 }
 
 .service-need {
@@ -239,6 +241,12 @@ section p {
     font-weight: bold;
 }
 
+.service-description-text {
+    color: #5c5a5a;
+    font-size: 1em;
+    line-height: 2;
+}
+
 /* Our Benefits Section */
 .our-benefits {
     text-align: center;
@@ -258,7 +266,7 @@ section p {
     text-align: center;
     flex: 1;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-block .icon-circle {
@@ -271,13 +279,12 @@ section p {
 }
 
 .benefit-block h3 {
-    font-size: 1.2em;
     margin-bottom: 15px;
     margin-top: 6px;
 }
 
 .benefit-block p {
-    font-size: 1.125em;
+    font-size: 1.1em;
     line-height: 1.8;
     color: #555;
 }
@@ -297,12 +304,13 @@ section p {
 }
 
 .project {
-    background-color: #e5eaeb;
+    background: linear-gradient(180deg, #e5eaeb87, #e5eaeb);
     border-radius: 8px;
     padding: 20px;
     display: flex;
     margin-bottom: 20px;
     position: relative;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .image-container {
@@ -333,6 +341,10 @@ section p {
 .project-info h4 {
     font-size: 1.125em;
     margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #5c5a5a;
 }
 
 .tags {
@@ -664,6 +676,12 @@ footer address {
     }
     
     /* Our Services Section */
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .service-point {
         flex-direction: column;
         align-items: center;
