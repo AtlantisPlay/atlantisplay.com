@@ -4,17 +4,96 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Color Palette */
+:root {
+    --primary-color: #0a55aa;
+    --secondary-color: #ff6600;
+    --background-light: #f9f9fc;
+    --text-dark: #484847;
+    --text-on-primary: #f5f5f5;
+    --accent-color: #3f70bd;
+}
+
+h2 {
+    font-size: 2.25rem;
+    text-align: center;
+    position: relative;
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* Refined CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--secondary-color), #ff8533);
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 102, 0, 0.3);
+}
+
+/* Enhanced Hover Effects */
+.menu a, a {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.menu a::after, a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover::after, a:hover::after {
+    transform: scaleX(1);
+}
 
 body {
     font-family: 'Nunito', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    line-height: 1.7;
+    letter-spacing: -0.02em;
 }
 
 a {
     text-decoration: underline;
-    color: #004e89;
+    color: var(--primary-color);
 }
 
 /* Animations and Transitions */
@@ -74,7 +153,7 @@ header .header-container {
 }
 
 .menu a:hover {
-    color: #0a55aa;
+    color: var(--primary-color);
 }
 
 .logo img {
@@ -102,7 +181,7 @@ header .header-container {
 }
 
 .hero {
-    background: linear-gradient(180deg, #3f70bd, #0a55aa);
+    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
     max-width: none;
     padding: 40px 0 40px 40px;
 }
@@ -132,7 +211,7 @@ header .header-container {
     font-size: 1.125em;
     margin-bottom: 20px;
     line-height: 2.5;
-    color: #f5f5f5;
+    color: var(--text-on-primary);
 }
 
 .cta-container {
@@ -201,6 +280,7 @@ section p {
     font-size: 1em;
     margin-bottom: 6px;
     font-weight: 100;
+    color: #5c5a5a;
 }
 
 .partner-logos {
@@ -274,7 +354,6 @@ section p {
 }
 
 .service-description-text {
-    color: #5c5a5a;
     font-size: 1em;
     line-height: 2;
 }
@@ -319,7 +398,6 @@ section p {
 .benefit-block p {
     font-size: 1.1em;
     line-height: 1.8;
-    color: #555;
 }
 
 /* "Our Experience" Section */
@@ -363,7 +441,6 @@ section p {
 .platform-icons {
     font-size: 0.75em;
     text-align: center;
-    color: #555;
 }
 
 .platform-icons i {
@@ -374,10 +451,6 @@ section p {
 .project-info h4 {
     font-size: 1.125em;
     margin-bottom: 10px;
-}
-
-.project-info p {
-    color: #5c5a5a;
 }
 
 .tags {
@@ -440,7 +513,7 @@ section p {
 /* "What we do" Section */
 .what-we-do {
     background-color: #fff;
-    color: #000;
+    color: var(--text-dark);
     background: url('images/Layer-1.png') no-repeat;
 }
 
@@ -449,8 +522,8 @@ section p {
 }
 
 .we-create-games {
-    color: #fff;
-    background: linear-gradient(180deg, #3f70bd, #0a55aa);
+    color: var(--text-on-primary);
+    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
     border-radius: 7px;
     text-align: center;
     padding: 20px;
@@ -565,8 +638,8 @@ section p {
 /* CTA Section */
 .cta-section {
     text-align: center;
-    background: linear-gradient(180deg, #3f70bd, #0a55aa);
-    color: #fff;
+    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
+    color: var(--text-on-primary);
     max-width: none;
     display: flex;
     justify-content: center;
