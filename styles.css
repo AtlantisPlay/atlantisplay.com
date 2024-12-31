@@ -11,6 +11,7 @@
     --secondary-color: #ff6600;
     --background-light: #f9f9fc;
     --text-dark: #484847;
+    --text-light: #7b7a7a;
     --text-on-primary: #f5f5f5;
     --accent-color: #3f70bd;
     --light-gray: #e5eaeb;
@@ -45,7 +46,7 @@ h2::after {
 
 p {
     font-size: 1.125rem;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .cta-button {
@@ -131,7 +132,7 @@ a {
 
 /* Header */
 header {
-    background-color: var(--white);
+    background-color: var(--background-light);
     padding: 10px 0 10px 40px;
 }
 
@@ -155,7 +156,7 @@ header .header-container {
 }
 
 .menu a {
-    color: #9c9c9c;
+    color: var(--text-light);
     text-decoration: none;
     margin-right: 40px;
 }
@@ -189,13 +190,8 @@ header .header-container {
 }
 
 .hero {
-    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
     max-width: none;
     padding: 40px 0 40px 40px;
-}
-
-.hero-text {
-    color: var(--white);
 }
 
 .highlight {
@@ -212,11 +208,10 @@ header .header-container {
     font-size: 2.875em;
     margin-bottom: 30px;
     line-height: 1.5;
-    letter-spacing: 0.9;
+    color: var(--white);
 }
 
 .hero-text p {
-    font-size: 1.125em;
     margin-bottom: 20px;
     line-height: 2.5;
     color: var(--text-on-primary);
@@ -253,11 +248,6 @@ section h2 {
     text-align: center;
 }
 
-section p {
-    font-size: 1.125em;
-    line-height: 2;
-}
-
 /* "We teamed up with" Section */
 .partners-section {
     background-color: #e7e6e6;
@@ -270,7 +260,7 @@ section p {
     font-size: 1em;
     margin-bottom: 6px;
     font-weight: 100;
-    color: #5c5a5a;
+    color: var(--text-light);
 }
 
 .partner-logos {
@@ -307,7 +297,6 @@ section p {
     margin-bottom: 20px;
     padding: 20px;
     font-size: 1.1em;
-    background: linear-gradient(180deg, var(--light-gray-alpha), var(--light-gray));
     border-radius: 10px;
 }
 
@@ -402,7 +391,6 @@ section p {
 }
 
 .project {
-    background: linear-gradient(180deg, var(--light-gray-alpha), var(--light-gray));
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -507,8 +495,6 @@ section p {
 }
 
 .we-create-games {
-    color: var(--text-on-primary);
-    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
     border-radius: 7px;
     text-align: center;
     padding: 20px;
@@ -630,7 +616,6 @@ section p {
 /* CTA Section */
 .cta-section {
     text-align: center;
-    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
     color: var(--text-on-primary);
     max-width: none;
     display: flex;
@@ -653,6 +638,15 @@ section p {
     font-size: 1.4em;
     font-weight: bolder;
     margin: 22px 0;
+}
+
+.hero, .we-create-games, .cta-section {
+    color: var(--text-on-primary);
+    background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
+}
+
+.service-point, .project {
+    background: linear-gradient(180deg, var(--light-gray-alpha), var(--light-gray));
 }
 
 /* Footer */
