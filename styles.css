@@ -10,6 +10,7 @@
     --primary-color: #0a55aa;
     --secondary-color: #ff6600;
     --background-light: #f9f9fc;
+    --link-color: #1677ec;
     --text-dark: #484847;
     --text-light: #7b7a7a;
     --text-on-primary: #f5f5f5;
@@ -102,7 +103,7 @@ body {
 
 a {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 /* Animations and Transitions */
@@ -250,7 +251,7 @@ section h2 {
 
 /* "We teamed up with" Section */
 .partners-section {
-    background-color: #e7e6e6;
+    background-color: var(--light-gray-alpha);
     padding: 12px;
     text-align: center;
     max-width: none;
@@ -401,7 +402,7 @@ section h2 {
 .image-container {
     width: 120px;
     height: 120px;
-    background-color: #ccc;
+    background-color: transparent;
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -567,7 +568,6 @@ section h2 {
 }
 
 .faq-question {
-    color: #1677ec;
     background: none;
     border: none;
     text-align: left;
@@ -578,6 +578,7 @@ section h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--link-color);
 }
 
 .faq-question i {
@@ -658,7 +659,7 @@ footer {
 }
 
 footer address {
-    color: #ccc;
+    color: var(--text-light);
 }
 
 .career-item {
