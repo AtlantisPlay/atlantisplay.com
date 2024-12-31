@@ -309,8 +309,6 @@ section p {
     font-size: 1.1em;
     background: linear-gradient(180deg, var(--light-gray-alpha), var(--light-gray));
     border-radius: 10px;
-    flex: 1;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
 }
 
 .service-point img {
@@ -368,7 +366,6 @@ section p {
     text-align: center;
     flex: 1;
     border-radius: 8px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
 }
 
 .benefit-block .icon-circle {
@@ -411,7 +408,6 @@ section p {
     display: flex;
     margin-bottom: 20px;
     position: relative;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
 }
 
 .image-container {
@@ -472,7 +468,6 @@ section p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
     font-weight: bold;
     border: none;
 }
@@ -517,7 +512,6 @@ section p {
     border-radius: 7px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
 }
@@ -549,6 +543,14 @@ section p {
     height: 100%;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-point,
+.benefit-block,
+.project,
+.secondary-button,
+.we-create-games {
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
 }
 
 /* "Who we are" Section */
