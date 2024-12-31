@@ -7,19 +7,19 @@
 
 /* Color Palette */
 :root {
-    --primary-color: #0a55aa;
+    --primary-color: #0a4e9c;
+    --accent-color: #3f70bd;
     --secondary-color: #ff6600;
+    --tertiary-color: #ff9c2f;
     --background-light: #f9f9fc;
     --link-color: #1677ec;
     --text-dark: #484847;
     --text-light: #7b7a7a;
     --text-on-primary: #f5f5f5;
-    --accent-color: #3f70bd;
     --light-gray: #e5eaeb;
     --light-gray-alpha: #e5eaeb87;
     --dark: #333333;
     --border-color: #ccc;
-    --tertiary-color: #ff9c2f;
     --white: #ffffff;
 }
 
