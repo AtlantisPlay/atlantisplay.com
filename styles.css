@@ -73,7 +73,7 @@ p {
 .menu a, a {
     position: relative;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--link-color);
     transition: color 0.3s ease;
 }
 
@@ -158,12 +158,11 @@ header .header-container {
 
 .menu a {
     color: var(--text-light);
-    text-decoration: none;
     margin-right: 40px;
 }
 
 .menu a:hover {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 .logo img {
