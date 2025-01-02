@@ -7,31 +7,33 @@
 
 /* Color Palette */
 :root {
-    --primary-color: #0a4e9c;
-    --accent-color: #3f70bd;
-    --secondary-color: #ff6600;
-    --tertiary-color: #ff9c2f;
-    --background-light: #f9f9fc;
-    --link-color: #1677ec;
-    --text-dark: #484847;
-    --text-light: #7b7a7a;
-    --text-on-primary: #f5f5f5;
-    --light-gray: #e5eaeb;
-    --light-gray-alpha: #e5eaeb87;
-    --dark: #333333;
-    --border-color: #ccc;
+    --primary-color: #2563eb;
+    --accent-color: #3b82f6;
+    --secondary-color: #f97316;
+    --tertiary-color: #fb923c;
+    --background-light: #f8fafc;
+    --heading-color: #0a4e9c;
+    --link-color: #2563eb;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --text-on-primary: #ffffff;
+    --light-gray: #e2e8f0;
+    --light-gray-alpha: #e2e8f087;
+    --dark: #0f172a;
+    --border-color: #e2e8f0;
     --white: #ffffff;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 }
 
 h2 {
     font-size: 2.25rem;
     text-align: center;
     position: relative;
-    color: var(--primary-color);
-}
-
-h3 {
-    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: var(--heading-color);
 }
 
 h2::after {
@@ -41,8 +43,13 @@ h2::after {
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
-    height: 4px;
+    height: 3px;
     background-color: var(--secondary-color);
+    border-radius: 3px;
+}
+
+h3 {
+    color: var(--heading-color);
 }
 
 p {
@@ -52,21 +59,29 @@ p {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: linear-gradient(180deg, var(--tertiary-color), var(--secondary-color));
     color: var(--white);
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
     text-decoration: none;
-    box-shadow: 0px 3px 3px #454343;
+    box-shadow: var(--shadow);
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
 }
 
 .cta-button:hover {
     background: linear-gradient(180deg, var(--secondary-color), #e26a0e);
     transform: scale(1.05);
-    box-shadow: 0px 5px 5px #333;
+    box-shadow: var(--shadow-lg);
+    transition: none;
+}
+
+.cta-button:hover::after {
+    transition: none;
+    display: none;
 }
 
 /* Enhanced Hover Effects */
@@ -74,7 +89,8 @@ p {
     position: relative;
     text-decoration: none;
     color: var(--link-color);
-    transition: color 0.3s ease;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2px 0;
 }
 
 .menu a::after, a::after {
@@ -82,7 +98,7 @@ p {
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -4px;
+    bottom: -2px;
     left: 0;
     background-color: var(--secondary-color);
     transform: scaleX(0);
@@ -109,8 +125,8 @@ a {
 /* Animations and Transitions */
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+    transform: translateY(10px);
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes fadeInUp {
@@ -122,8 +138,8 @@ a {
 
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reveal.visible {
@@ -277,6 +293,7 @@ section h2 {
 
 .partner-logo img:hover {
     filter: grayscale(0%);
+
 }
 
 /* "Our services" Section */
