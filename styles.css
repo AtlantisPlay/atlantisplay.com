@@ -450,7 +450,7 @@ section h2 {
 
 .tags span {
     display: inline-block;
-    border: 1px solid #416f71;
+    border: 1px solid var(--secondary-color);
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 5px;
